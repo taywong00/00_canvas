@@ -27,7 +27,7 @@ var connect = function(e) {
   ctx.beginPath();
   ctx.strokeStyle="#0000FF"; //set stroke style to blue
   ctx.fillStyle="#0000FF"; //set fill color to blue
-  if (lastX) {
+  if (lastX) { //if there was a dot before this, then connect to it
     ctx.moveTo(e.offsetX, e.offsetY);
     ctx.lineTo(lastX, lastY); //line to here
     console.log(lastX, lastY);
