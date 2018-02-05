@@ -46,7 +46,9 @@ var draw = function(e) {
 }
 
 var clearFunction = function(e) {
-  ctx.clearRect(0, 0, c.width, c.height) //clears everything in a rect from the x, y of the upper hand corner through the given width/height
+  ctx.clearRect(0, 0, c.width, c.height); //clears everything in a rect from the x, y of the upper hand corner through the given width/height
+  lastX = null;
+  lastY = null;
 }
 
 c.addEventListener("click", draw);
