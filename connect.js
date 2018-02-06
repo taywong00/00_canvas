@@ -1,12 +1,8 @@
 //retrieve node in DOM via ID
 var c = document.getElementById("slate");
 console.log('c: ', c);
-//var toggle = document.getElementById("toggle");
-//console.log('toggle: ', toggle);
 var clear = document.getElementById("clear");
 console.log('clear: ', clear);
-var shape = true; //true = circle, false = rectangle
-console.log('shape: ', shape)
 //instantiate a CanvasRenderingContext2D object
 var ctx = c.getContext("2d");
 console.log('context: ', ctx);
@@ -52,5 +48,4 @@ var clearFunction = function(e) {
 }
 
 c.addEventListener("click", draw);
-//toggle.addEventListener("click", toggleFunction);
 clear.addEventListener("click", clearFunction);
